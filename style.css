@@ -1,0 +1,82 @@
+@import "compass/css3";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 50px;
+  background: rgba(179, 255, 1, 0.788);
+}
+
+.mug {
+  position: relative;
+  height: 300px;
+  width: 250px;
+  margin: auto;
+  padding-top: 100px;
+  background: black;
+  border-radius: 50% 50%;
+  border-top-left-radius: 125px 50px;
+  border-top-right-radius: 140px 50px;
+}
+
+.inner-mug {
+  position: absolute;
+  height: 60px;
+  width: 223px;
+  top: 10px;
+  left: 15px;
+  border-radius: 50%;
+  background: black;
+}
+
+.mug:after { /* the coffee */
+  content: "";
+  position: absolute; 
+  Border-style: solid;
+  border-color: rgba(126,92,39,1);
+  height: 37px;
+  width: 217px;
+  top: 18.5px;
+  left: 16px;
+  border-radius: 50% 50% 60% 60%;
+  background: linear-gradient(-6deg, black 1%, rgba(126,89,39,1) 68%, rgba(237,152,60,1) 100%)
+}
+
+.handle {
+  position: relative;
+  height: 145px;
+  width: 75px;
+  top: -35px;
+  left: -65px;
+  border-top-left-radius: 110px;
+  border-bottom-left-radius: 120px;
+  border-top-right-radius: 50% 20px;
+  border-bottom-right-radius: 7% 10px;
+  background: black;
+  background-color: black;
+}
+
+.handle:after {
+  content: "";
+  position: absolute;
+  height: 90px;
+  width: 45px;
+  top: 27px;
+  left: 25px;
+  border-top-left-radius: 255px 270px;
+  border-bottom-left-radius: 305px 300px;
+  border-top-right-radius: 45px 5px;
+  border-bottom-right-radius: 45px 5px;
+  background: rgba(179, 255, 1, 0.788);
+}
+
+img {
+  position: relative;
+  max-width: 200px;
+  height: auto;
+  bottom: 190px;
+  left: 30px;
+  border-radius: 50%;
+}
